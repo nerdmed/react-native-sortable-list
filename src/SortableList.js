@@ -176,6 +176,7 @@ export default class SortableList extends Component {
 
       if (rowsLayouts) {
         style.width = rowWidth;
+        style.height = rowsLayouts[key].height;
         location.y = nextY;
         nextY += rowsLayouts[key].height;
       } else {
